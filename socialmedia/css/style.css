@@ -1,9 +1,51 @@
 body {
-  background: #333 ;
+  background: #333;
   color: #fff;
 }
 
 .navbar {
   border-bottom: #008ed6 3px solid;
   opacity: 0.8;
+}
+
+/* podesiti stranicu*/
+#home-section {
+  background: url('../img/home.jpg');
+  background-repeat: no-repeat; /* ne ponavljati se*/
+  background-size: cover; /* pokriti cijelu stranicu */
+  background-attachment: fixed; /* fiksirati poziciju*/
+  min-height: 700px;
+}
+
+/* način kako se prekriva slika da se vide slova*/
+#home-section .pozadinska-slika-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#home-section .home-inner {
+  padding-top: 150px;
+}
+
+#home-section .card-form {
+  opacity: 0.7;
+}
+
+#home-section .fas {
+  background: #fff;
+  color: #008ed6;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#explore-section .fas,
+#share-section .fas {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
